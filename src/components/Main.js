@@ -1,6 +1,13 @@
+import  "../App.css"
+import Hero from "./Hero"
+import Specials from "./Specials"
+
 const Main = () => {
   return (
-    <div>Main</div>
+    <main>
+        <Hero/>
+        <Specials/>
+    </main>
   )
 }
 export default Main

@@ -1,9 +1,10 @@
+import '../App.css'
 const Navbar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <a href="./">Home</a>
+          <a className="active" href="./">Home</a>
         </li>
         <li>
           <a href="./">About</a>
@@ -15,7 +16,7 @@ const Navbar = () => {
           <a href="./">Reservations</a>
         </li>
         <li>
-          <a href="./">Order Online</a>
+          <a href="./">Order</a>
         </li>
         <li>
           <a href="./">Login</a>

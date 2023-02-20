@@ -1,12 +1,21 @@
-import Navbar from "./Navbar"
+import '../App.css';
+// import 'font-awesome/css/font-awesome.min.css';
+import Logo from '../assets/logo.svg';
+
+
+import Navbar from './Navbar';
 
 const Header = () => {
   return (
     <header>
-        {/* <h1>Little Lemon</h1> */}
-        <img src="../assets/Logo.svg" alt="Little Lemon" />
-        <Navbar />
+      {/* <h1>Little Lemon</h1> */}
+      <div className="logo">
+        <img src={Logo} alt="Little Lemon" />
+      </div>
+      <div id="menu-bar" className="fas fa-hamburger"></div>
+
+      <Navbar />
     </header>
-  )
-}
-export default Header
+  );
+};
+export default Header;

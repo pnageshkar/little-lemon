@@ -14,7 +14,7 @@ function App() {
       <Specials />
       <Testimonials />
       <About />
-      <Footer />
+       <Footer />
     </>
   );
 }

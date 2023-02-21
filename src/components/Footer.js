@@ -4,6 +4,7 @@ import FootLogo from '../assets/footer-logo.png'
 const Footer = () => {
   return (
     <footer>
+      <div className="footer-container">
       <div className="footer-logo">
         <img src= {FootLogo} alt="Logo" />
       </div>
@@ -35,16 +36,16 @@ const Footer = () => {
           <h2>Contact</h2>
           <ul className='links'>
             <li>12 S Michigan Ave,</li>
-            <li>Chicago Il 60603</li>
-            <br></br>
-            <li>(312) 792-3502</li>
-            <br></br>
+            <li>Chicago IL 60603</li>
+            
+            <li>Tel: (312) 792-3502</li>
+            
             <a
               href="mailto: contact@littlelemon.com"
               target="_blank"
               rel="noreferrer"
             >
-              Email @littlelemon.com
+              Email: enq@littlelemon.com
             </a>
           </ul>
           
@@ -75,6 +76,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </footer>
   );

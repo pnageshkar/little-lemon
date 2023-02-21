@@ -5,7 +5,7 @@ const Specials = () => {
   return (
     <section className="specials">
         <div className="specials-top">
-            <h2>Weekend Specials !!</h2>
+            <h2>Specials !!</h2>
             <button className="btnPrimary">Online Menu</button>
         </div>
         <div className="specials-bottom">

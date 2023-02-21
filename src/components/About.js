@@ -12,7 +12,7 @@ const About = () => {
 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
       </div>
       <div className="img-about-container">
-        <img id="top-image" src={MarioAdrian} alt="Mario and Adrian " />
+        {/* <img id="top-image" src={MarioAdrian} alt="Mario and Adrian " /> */}
         <img id="bottom-image" src={Restaurant} alt="Restaurant Seating" />
       </div>
     </section>

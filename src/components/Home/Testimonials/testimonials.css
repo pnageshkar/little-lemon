@@ -1,0 +1,30 @@
+.testimonials {
+  display: flex;
+  /* height: 30vh; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  padding-bottom: 3rem;
+  background: var(--sec-gray);
+  /* border: 1px solid brown; */
+}
+
+.test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  max-width: 80%;
+  padding-top: 2rem;
+  /* border: 1px solid green; */
+}
+
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}

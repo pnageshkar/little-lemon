@@ -1,5 +1,5 @@
-import '../App.css';
-import FootLogo from '../assets/footer-logo.png'
+import './footer.css';
+import FootLogo from '../../assets/footer-logo.png'
 
 const Footer = () => {
   return (

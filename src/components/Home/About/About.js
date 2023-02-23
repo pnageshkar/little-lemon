@@ -1,6 +1,6 @@
-import '../App.css'
-import MarioAdrian from '../assets/Mario-and-Adrian.jpg'
-import Restaurant from '../assets/restaurant.jpg'
+import './about.css'
+import MarioAdrian from '../../../assets/Mario-and-Adrian.jpg'
+import Restaurant from '../../../assets/restaurant.jpg'
 
 const About = () => {
   return (

@@ -1,0 +1,105 @@
+.hero {
+  display: flex;
+  max-height: 40vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 6rem 3rem auto auto;
+  background: var(--prim-green);
+  padding-bottom: 1rem;
+  /* border: 1px solid pink; */
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-height: 40vh;
+  width: 80%;
+
+  /* border: 1px solid green; */
+}
+
+.hero-info {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 1.5rem;
+  /* border: 1px solid black; */
+}
+
+.img-hero {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 1px solid pink; */
+}
+.img-hero img {
+  width: 60%;
+  height: 70%;
+  min-height: 15rem;
+  min-width: 15rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  border-radius: 0.5rem;
+  object-fit: fill;
+}
+.hero-info h1 {
+  /* height: 20%; */
+  font-size: 6.4rem;
+  color: var(--prim-yellow);
+  font-weight: bold;
+  font-family: 'Markazi Text';
+  /* margin-top: -1rem; */
+}
+.hero-info h3 {
+  /* height: 25%; */
+  font-size: 4rem;
+  color: white;
+  font-weight: normal;
+  font-family: 'Markazi Text';
+  margin-top: -2rem;
+}
+.hero-info p {
+  /* height: 35%; */
+  font-size: 1.6rem;
+  color: white;
+  font-weight: normal;
+  font-family: 'Karla';
+  margin-bottom: 1rem;
+  min-width: 10rem;
+  text-align: justify;
+  overflow-x: hidden;
+  /* max-width: 90%; */
+}
+.hero-info .btnPrimary {
+  /* height: 20%; */
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  /* html {
+    font-size: 55%;
+  } */
+
+  .img-hero {
+    display: none;
+    width: 0%;
+  }
+  .hero-info {
+    width: 100%;
+  }
+  .hero-info h1 {
+    font-size: 4.5rem;
+  }
+  .hero-info h3 {
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+}

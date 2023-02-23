@@ -1,5 +1,5 @@
-import '../App.css';
-import serve from '../assets/restauranfood.jpg'
+import './hero.css';
+import serve from '../../../assets/restauranfood.jpg'
 
 const Hero = () => {
   return (

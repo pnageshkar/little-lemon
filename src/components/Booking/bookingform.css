@@ -1,0 +1,49 @@
+.booking {
+  width: 80%;
+  margin: 6rem auto 0rem;
+}
+
+.booking h1 {
+  color: var(--prim-green);
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  /* width: 100%; */
+  max-width: 30rem;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--prim-green);
+  /* border: 1px solid #000; */
+  border-radius: 0.75rem;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+input[type='date'],
+select,
+input[type='number'] {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.btnPrimary {
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+}
+
+.btnPrimary:disabled,
+.btnPrimary[disabled] {
+  border: 1px solid var(--sec-gray);
+  background-color: var(--sec-gray);
+  color: #666666;
+  cursor: default;
+}

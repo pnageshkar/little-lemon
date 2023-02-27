@@ -1,0 +1,42 @@
+.confirmation {
+  width: 80%;
+  margin: 8rem auto 0rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.confirmation h1 {
+  color: var(--prim-green);
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0rem 2rem;
+}
+
+.confirmation .resDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.resdetails h3 {
+  color: var(--prim-green);
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+}
+.confirmation p {
+  color: var(--prim-green);
+  font-family: 'Karla';
+  font-size: 2rem;
+  /* text-align: center; */
+}
+
+.btnPrimary {
+  margin: 2rem auto;
+}

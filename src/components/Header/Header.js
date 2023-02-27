@@ -35,7 +35,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="nav-menu-item">
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/Booking">
               Reservations
             </NavLink>
           </li>

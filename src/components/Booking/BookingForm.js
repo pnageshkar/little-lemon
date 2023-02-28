@@ -28,13 +28,12 @@ const BookingForm = ({ availableTimes, getAvailableTimes, submit }) => {
 
   const handleInputBlur = (event) => {
     const fieldName = event.target.name;
+    console.log(fieldName);
     setTouchedFields({ ...touchedFields, [fieldName]: true });
-  // Validate the field only if it has been touched
-    if (touchedFields[fieldName]) {
-        const error = validateField(fieldName);
-        setErrors({ ...errors, [fieldName]: error });
-    }
-
+    const error = validateField(fieldName);
+    setErrors({ ...errors, [fieldName]: error });
+    // console.log(errors);
+    
   }
 
   const validateField = (fieldName) => {
@@ -42,14 +41,14 @@ const BookingForm = ({ availableTimes, getAvailableTimes, submit }) => {
     switch (fieldName) {
       case "time":
         if (time === '') {
-          error = "* Time is required";
+          error = "Time is required";
         }
         break;
       case "guests":
         if (guestCount === '') {
           error = "* Guest Count is required";
         } else if (guestCount < 1 || guestCount > 10) {
-          error = "* Guest Count should be between 1 and 10";
+          error = "* Guest Count has to be between 1 and 10";
         }
         break;
       case "occasion":

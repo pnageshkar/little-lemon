@@ -41,7 +41,7 @@ const BookingForm = ({ availableTimes, getAvailableTimes, submit }) => {
     switch (fieldName) {
       case "time":
         if (time === '') {
-          error = "Time is required";
+          error = "*Time is required";
         }
         break;
       case "guests":
@@ -110,6 +110,7 @@ const BookingForm = ({ availableTimes, getAvailableTimes, submit }) => {
         <input
           type="number"
           placeholder="# of Guests"
+          aria-label = "Number of guests"
           min="1"
           max="10"
           id="guests"
@@ -117,6 +118,7 @@ const BookingForm = ({ availableTimes, getAvailableTimes, submit }) => {
           value={guestCount}
           onChange={(e) => setGuestCount(e.target.value)}
           onBlur = {handleInputBlur}
+          required
         />
         { touchedFields.guests && errors.guests && <div className='errorMsg'>{errors.guests}</div> }
         <label htmlFor="occasion">Occasion</label>
@@ -126,6 +128,7 @@ const BookingForm = ({ availableTimes, getAvailableTimes, submit }) => {
           value={occasion}
           onChange={(e) => setOccasion(e.target.value)}
           onBlur = {handleInputBlur}
+          required
         >
           <option value="">Select the Occasion</option>
           <option>Birthday</option>

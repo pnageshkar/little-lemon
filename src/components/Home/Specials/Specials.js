@@ -36,15 +36,6 @@ const Specials = () => {
   );
 };
 
-// {items.map((item, index) => (
-//   <Card
-//     key={index}
-//     name={item.name}
-//     price={item.price}
-//     image={item.image}
-//     description={item.description}
-//     actionText="Buy Now"
-//   />
-// ))}
+
 
 export default Specials;

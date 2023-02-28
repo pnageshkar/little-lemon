@@ -1,6 +1,6 @@
 .booking {
   width: 80%;
-  margin: 6rem auto 0rem;
+  margin: 6rem auto 3rem;
 }
 
 .booking h1 {
@@ -13,18 +13,20 @@ form {
   display: grid;
   /* width: 100%; */
   max-width: 30rem;
-  gap: 1rem;
+  grid-row-gap: 0.25rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.2rem 2rem;
   background: var(--prim-green);
   /* border: 1px solid #000; */
   border-radius: 0.75rem;
+  justify-items: space-between;
 }
 
 label {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
+  padding-top: 1rem;
 }
 
 input[type='date'],
@@ -36,12 +38,12 @@ input[type='number'] {
 }
 
 .errorMsg {
-  color: red;
-  font-size: 1.5rem;
+  color: #e63b2e;
+  font-size: 1.3rem;
 }
 
 .btnPrimary {
-  margin-top: 3rem;
+  /* margin-top: 4rem; */
   margin-bottom: 0rem;
 }
 
@@ -51,4 +53,28 @@ input[type='number'] {
   background-color: var(--sec-gray);
   color: #666666;
   cursor: default;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
 }

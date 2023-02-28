@@ -1,0 +1,27 @@
+section {
+  width: 80%;
+  margin: 6rem auto 0rem;
+  height: 60vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+h1,
+h2 {
+  color: var(--prim-green);
+  font-size: 10rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
